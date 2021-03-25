@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #0f0f0f;
+}
+
+.header__top {
+    padding: 14px;
+    background-color: black;
+}
+
+.header__time:first-of-type {
+    position: relative;
+}
+
+.header__time:first-of-type::before,
+.header__time:first-of-type::after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 3px;
+    height: 10px;
+    width: 1px;
+    background-color: #969696;
+}
+
+.header__time:first-of-type::after {
+    left: auto;
+    right: -15px;
+}
+
+.header__bottom {
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.header__link,
+header span,
+.header__button {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;
+    text-decoration: none;
+}
+
+.header__phone {
+    margin-right: 15px;
+}
+
+header span {
+    margin-left: 30px;
+}
+
+.header__button {
+    background-color: transparent;
+    border: none;
+}
+
+.header__top .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    margin: auto;
+    max-width: 1110px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__list a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #969696;
+    text-decoration: none;
+    padding: 30px 20px;
+}
+
+.nav__list a:hover {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.system a:first-of-type {
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.hero {
+    min-height: calc(100vh - 128px);
+    background: url('../images/man-with-scarf.png') no-repeat center;
+    background-size: cover;
+}
+
+.hero__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    min-height: calc(100vh - 128px);
+}
+
+.hero__city {
+    border: 4px solid #ffffff;
+    box-sizing: border-box;
+    padding: 95px 65px;
+}
+
+.hero__title {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-top: 2px solid #ffffff;
+    padding-top: 10px;
+}
+
+.hero__description {
+    margin-top: 5vh;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 730px;
+}
+
+main {
+    background: #000000;
+    color: #ffffff;
+}
+
+.season__title {
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.season__title::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -50px;
+    width: 120px;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.season__name {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.season__price {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #D0D0D0;
+}
+
+.season__left {
+    width: 60%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.season__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191b1c;
+    height: 325px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.season__column {
+    padding: 25px;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+.season .row {
+    margin: -25px;
+}
+
+.season {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.season__right {
+    background: url('../images/man-with-watches.png') no-repeat center;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 100px;
+    background-size: cover;
+}
+
+.season__right:nth-child(3) {
+    background: url('../images/gray-suit.png') no-repeat center;
+    min-height: 600px;
+    background-size: cover;
+}
+
+.season__link {
+font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #FFFFFF;
+border: 1px solid #ffffff;
+padding: 12px 28px;
+text-decoration: none;
+}
+
+.season__left .season__info {
+    padding-top: 100px;
+    max-width: 470px;
+    margin: auto;
+    text-align: center;
+}
+
+.season__description {
+font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: #FFFFFF;
+margin-bottom: 60px;
+}
+
+.new-products__img {
+    background-color: #191b1c;
+    min-height: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.new-products__item {
+    margin: 12px;
+}
+
+.new-products__name {
+font-family: Playfair Display;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+.new-products__price {
+font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 21px;
+color: #D0D0D0;
+}
+
+.new-products {
+    padding: 120px 0 150px;
+}
+
+.brands {
+    padding: 60px 0 80px;
+    background-color: #0f0f0f;
+}
+
+.footer {
+    padding-top: 80px;
+    background: url('../images/footer.png');
+    background-size: cover;
+}
+
+.footer__title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer__description {
+font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+color: #FFFFFF;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-list__item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-list__link {
+font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+color: #D0D0D0;
+padding: 10px 20px;
+background: #0f0f0f;
+text-decoration: none;
+}
+
+.footer__form {
+    margin-top: 35px;
+}
+
+.footer__form input {
+font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+color: #969696;
+padding: 10px 15px;
+background: rgba(255, 255, 255, 0.4);
+outline: none;
+border: none;
+}
+
+.footer__button {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+color: #D0D0D0;
+padding: 10px 20px;
+background: #0f0f0f;
+text-decoration: none;
+}
+
+.footer__form input::placeholder {
+    color: #969696;
+}
+
+.footer__form button {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+color: #D0D0D0;
+padding: 10px 20px;
+background: #0f0f0f;
+border: none;
+outline: none;
+}
+
+.footer-info {
+    background-color: black;
+    padding: 17px 0;
+}
+
+.footer-info-item {
+font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+color: #D0D0D0;
+}
+
+.footer-info .container {
+    display: flex;
+    justify-content: space-between;
+}
